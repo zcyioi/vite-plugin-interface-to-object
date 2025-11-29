@@ -1,6 +1,6 @@
-﻿{
+{
   "name": "vite-plugin-interface-to-object",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Vite plugin for generating interface guards during Vite builds",
   "type": "module",
   "main": "dist/index.cjs",
