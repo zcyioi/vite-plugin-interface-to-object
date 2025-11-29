@@ -1,0 +1,57 @@
+{
+  "name": "react-interface-guarder-utils",
+  "version": "0.0.0",
+  "description": "React utilities to support interface guarder flows (placeholder implementation).",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "react",
+    "utils",
+    "interface",
+    "guarder"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.33",
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "format": [
+      "esm",
+      "cjs"
+    ],
+    "dts": true,
+    "sourcemap": true,
+    "clean": true,
+    "target": "es2022",
+    "platform": "neutral",
+    "external": [
+      "react"
+    ],
+    "outDir": "dist"
+  }
+}
