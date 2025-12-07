@@ -7,9 +7,6 @@ npm install vite-plugin-interface-to-object // plugin
 ```ts
 export default defineConfig({
   plugins: [react(), InterfaceGuarderPlugin(), TsInterfaceToExport()],
-  build: {
-    sourcemap: true, // 开发也可加
-  },
 });
 ```
 #### 3. 使用
