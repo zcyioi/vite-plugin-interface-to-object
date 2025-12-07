@@ -19,7 +19,7 @@ interface User {
 	name: string;
 	age: number;
 	sex: "男" | "女";
-	Children?: Children[];
+	Children: Children[];
 }
 const fetchData = () => {
 	const data = Promise.resolve({
